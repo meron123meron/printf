@@ -16,8 +16,6 @@ va_start(args, format);
 we = vfprintf(stdout, format, args);
 if (format[i] == 'b')
 {
-int y = va_arg(args, int);
-y = a[x];
 for (x = 0; n > 0; x++)
 {
 a[x] = n % 2;
@@ -25,7 +23,7 @@ n = n / 2;
 }
 for (x = x -1; x >= 0; x++)
 {
-return (y);
+return (a[x]);
 }
 }
 va_end(args);
